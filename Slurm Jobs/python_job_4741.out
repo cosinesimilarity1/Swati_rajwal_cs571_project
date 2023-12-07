@@ -1,0 +1,56 @@
+(11550, 3)
+(4620, 3)
+Model: XGBoost
+Best Parameters: {'learning_rate': 0.1, 'n_estimators': 100}
+Accuracy: 0.5405124653739612
+Micro F1: 0.5405124653739612
+Macro F1: 0.5255886535296945
+Micro F2: 0.5405124653739612
+Macro F2: 0.5146242723378753
+--------------------------------
+Model: GradientBoosting
+Best Parameters: {'learning_rate': 0.1, 'n_estimators': 100}
+Accuracy: 0.5564404432132964
+Micro F1: 0.5564404432132964
+Macro F1: 0.5348621650915822
+Micro F2: 0.5564404432132964
+Macro F2: 0.5220648768672344
+--------------------------------
+Model: Naive Bayes
+Best Parameters: {'alpha': 0.01}
+Accuracy: 0.5879501385041551
+Micro F1: 0.5879501385041551
+Macro F1: 0.5833228872310091
+Micro F2: 0.5879501385041551
+Macro F2: 0.5819027747252135
+--------------------------------
+Model: Logistic Regression
+Best Parameters: {'C': 1, 'penalty': 'l2', 'solver': 'liblinear'}
+Accuracy: 0.5903739612188366
+Micro F1: 0.5903739612188366
+Macro F1: 0.5671142651937701
+Micro F2: 0.5903739612188366
+Macro F2: 0.5534329704115944
+--------------------------------
+Model: SVM
+Best Parameters: {'C': 10}
+Accuracy: 0.5488227146814404
+Micro F1: 0.5488227146814404
+Macro F1: 0.5373848659690954
+Micro F2: 0.5488227146814404
+Macro F2: 0.5267562147001207
+--------------------------------
+
+
+ Best models parameters
+{'XGBoost': XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...), 'GradientBoosting': GradientBoostingClassifier(), 'Naive Bayes': MultinomialNB(alpha=0.01), 'Logistic Regression': LogisticRegression(C=1, max_iter=10000, solver='liblinear'), 'SVM': SVC(C=10)}
